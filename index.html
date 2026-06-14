@@ -3,211 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haru3 Portfolio | Web制作・業務効率化</title>
-  <meta name="description" content="情報系大学生のWeb制作・Web修正・簡単な自動化案件向けポートフォリオサイトです。">
+  <title>Cafe Lumière | 架空カフェLP</title>
+  <meta name="description" content="Cafe Lumièreは、自家焙煎コーヒーと手作りスイーツを楽しめる架空カフェのランディングページサンプルです。">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ヘッダー：サイト内の各セクションへ移動するナビゲーションです -->
+  <!-- このサイトはポートフォリオ掲載用の架空カフェLPです -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">Haru3</a>
+      <a class="logo" href="#top">Cafe Lumière</a>
       <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav class="global-nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#works">Works</a>
-        <a href="#service">Service</a>
+        <a href="#concept">Concept</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#scene">Scene</a>
+        <a href="#access">Access</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- トップ：最初に見られる自己紹介エリアです -->
-    <section class="hero" id="top">
-      <div class="container hero-inner">
-        <p class="eyebrow">Portfolio</p>
-        <h1>Haru3</h1>
-        <p class="hero-title">情報系大学生 / Web制作・Web修正・業務効率化サポート</p>
-        <p class="hero-text">
-          HTML・CSS・JavaScriptを中心に、シンプルで見やすいWebページ制作や既存サイトの修正、
-          Googleスプレッドシートを使った簡単な作業効率化に対応します。
-          進捗共有と事前確認を大切にし、安心して相談できる対応を心がけています。
-        </p>
-        <div class="hero-actions">
-          <a class="button primary-button" href="#contact">お問い合わせ</a>
-          <a class="button secondary-button" href="#works">制作実績を見る</a>
+  <main id="top">
+    <!-- Hero：LPの第一印象を作るエリアです -->
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="label">Portfolio Sample / Fictional Cafe</p>
+          <h1>日常に、少しだけ特別なひとときを。</h1>
+          <p class="hero-text">
+            自家焙煎コーヒーと手作りスイーツを楽しめる、落ち着いた雰囲気のカフェです。
+            ひとりで過ごす時間も、大切な人との会話も、ゆっくり味わえる空間を用意しています。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary-button" href="#menu">メニューを見る</a>
+            <a class="button secondary-button" href="#access">アクセスを見る</a>
+          </div>
+        </div>
+        <!-- 画像に差し替える場合は、この div を img タグに変更できます -->
+        <div class="hero-visual" aria-label="カフェのイメージ画像">
+          <div class="cup"></div>
+          <p>Fresh Coffee & Handmade Sweets</p>
         </div>
       </div>
     </section>
 
-    <!-- About：人柄や仕事への姿勢を伝えるセクションです -->
-    <section class="section" id="about">
-      <div class="container two-column">
+    <!-- Concept：お店の雰囲気と価値を伝えるエリアです -->
+    <section class="section" id="concept">
+      <div class="container split-layout">
         <div>
-          <p class="section-label">About</p>
-          <h2>小さなご相談でも、内容を整理して丁寧に進めます。</h2>
+          <p class="label">Concept</p>
+          <h2>木のぬくもりに包まれる、静かな街角のカフェ。</h2>
         </div>
-        <div class="section-body">
+        <div class="text-block">
           <p>
-            情報系を専攻している大学生です。授業や自主学習を通して、プログラミング、
-            Web制作、業務効率化に関心を持ち、実際に手を動かしながら学んでいます。
+            Cafe Lumièreは、日常の中に少しだけ特別な時間を届ける架空のカフェです。
+            店内は木目を基調にした落ち着いた空間で、コーヒーの香りとやわらかな照明が広がります。
           </p>
           <p>
-            まだ大きな実績は多くありませんが、依頼内容をきちんと整理し、作業前の確認、
-            進捗共有、不明点の相談をこまめに行います。発注者の方が安心して任せられるよう、
-            誠実でわかりやすいコミュニケーションを心がけています。
+            ひとりで読書をしたい日も、友人とゆっくり話したい日も、気軽に立ち寄れる場所。
+            自家焙煎コーヒーと手作りスイーツで、ほっとひと息つける時間を提供します。
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Skills：できること・学習中のことを自然に整理しています -->
-    <section class="section section-muted" id="skills">
+    <!-- Menu：おすすめ商品をカードで見せるエリアです -->
+    <section class="section section-warm" id="menu">
       <div class="container">
         <div class="section-heading">
-          <p class="section-label">Skills</p>
-          <h2>対応できること</h2>
-          <p>基礎を大切にしながら、小規模な制作・修正・自動化から対応できます。</p>
+          <p class="label">Menu</p>
+          <h2>おすすめメニュー</h2>
+          <p>はじめてのお客様にも選ばれやすい、Cafe Lumièreの定番メニューです。</p>
         </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>HTML</h3>
-            <p>見出しや文章構造を意識し、読みやすいページを作成します。</p>
-          </article>
-          <article class="skill-card">
-            <h3>CSS</h3>
-            <p>余白、配色、レスポンシブ対応を意識したシンプルなデザイン制作ができます。</p>
-          </article>
-          <article class="skill-card">
-            <h3>JavaScript</h3>
-            <p>メニュー開閉やフォーム表示など、Webページに小さな動きを加えられます。</p>
-          </article>
-          <article class="skill-card">
-            <h3>Python</h3>
-            <p>データ整理や簡単な処理の自動化を学習中です。小さな効率化から相談できます。</p>
-          </article>
-          <article class="skill-card">
-            <h3>Googleスプレッドシート自動化</h3>
-            <p>入力補助、集計、作業の整理など、簡単な自動化に対応します。</p>
-          </article>
-          <article class="skill-card">
-            <h3>Webサイト修正</h3>
-            <p>テキスト、画像、レイアウトの調整など、小さな修正も丁寧に対応します。</p>
-          </article>
-          <article class="skill-card">
-            <h3>レスポンシブ対応</h3>
-            <p>スマホ・タブレット・PCで見やすい表示になるよう調整します。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Works：実績を追加するときは article.work-card をコピーします -->
-    <section class="section" id="works">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Works</p>
-          <h2>制作実績・サンプル</h2>
-          <p>現在は学習成果とサンプル制作を中心に掲載しています。</p>
-        </div>
-        <div class="works-grid">
-          <article class="work-card">
-            <div class="work-image">Portfolio</div>
-            <div class="work-content">
-              <p class="work-category">Webサイト制作</p>
-              <h3>個人ポートフォリオサイト</h3>
-              <p>クラウドソーシングでの受注を想定し、自己紹介、対応範囲、連絡先を1ページに整理したサイトです。</p>
-              <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>スマホ対応</li>
-                <li>お問い合わせ導線</li>
-              </ul>
+        <div class="card-grid">
+          <article class="menu-card">
+            <div class="menu-image coffee-placeholder"></div>
+            <div class="card-body">
+              <div class="menu-title">
+                <h3>自家焙煎ブレンドコーヒー</h3>
+                <span>¥500</span>
+              </div>
+              <p>深みのある味わいとすっきりした後味が特徴の定番コーヒー。</p>
             </div>
           </article>
-          <article class="work-card">
-            <div class="work-image accent-green">LP Sample</div>
-            <div class="work-content">
-              <p class="work-category">架空サンプル</p>
-              <h3>学習サービス向けLP</h3>
-              <p>オンライン学習サービスを想定し、サービス内容と問い合わせ導線が伝わりやすい構成にしたLPサンプルです。</p>
-              <ul>
-                <li>ファーストビュー設計</li>
-                <li>料金・特徴セクション</li>
-                <li>CTAボタン配置</li>
-              </ul>
+          <article class="menu-card">
+            <div class="menu-image tart-placeholder"></div>
+            <div class="card-body">
+              <div class="menu-title">
+                <h3>季節のフルーツタルト</h3>
+                <span>¥680</span>
+              </div>
+              <p>旬の果物を使った、見た目にも華やかな手作りタルト。</p>
             </div>
           </article>
-          <article class="work-card">
-            <div class="work-image accent-orange">Automation</div>
-            <div class="work-content">
-              <p class="work-category">架空サンプル</p>
-              <h3>スプレッドシート集計自動化ツール</h3>
-              <p>入力された作業データを整理し、日別・担当者別に集計する仕組みを想定した業務効率化サンプルです。</p>
-              <ul>
-                <li>入力内容の整理</li>
-                <li>集計表の作成</li>
-                <li>作業時間の短縮</li>
-              </ul>
+          <article class="menu-card">
+            <div class="menu-image latte-placeholder"></div>
+            <div class="card-body">
+              <div class="menu-title">
+                <h3>カフェラテ</h3>
+                <span>¥580</span>
+              </div>
+              <p>ミルクの甘みとエスプレッソの香りを楽しめる人気メニュー。</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Service：クラウドソーシングで相談されやすい内容を並べています -->
-    <section class="section section-muted" id="service">
+    <!-- Features：お店のこだわりを短く伝えるエリアです -->
+    <section class="section" id="features">
       <div class="container">
         <div class="section-heading">
-          <p class="section-label">Service</p>
-          <h2>お手伝いできること</h2>
-          <p>クラウドソーシングでご相談いただきやすい、小規模な制作・修正を中心に対応します。</p>
+          <p class="label">Features</p>
+          <h2>3つのこだわり</h2>
         </div>
-        <div class="service-list">
-          <div class="service-item">
+        <div class="feature-grid">
+          <article class="feature-card">
             <span>01</span>
-            <p>LP・簡単なWebページ制作</p>
-          </div>
-          <div class="service-item">
+            <h3>香りを楽しむ自家焙煎コーヒー</h3>
+            <p>豆の個性に合わせて丁寧に焙煎し、香りまで楽しめる一杯を提供します。</p>
+          </article>
+          <article class="feature-card">
             <span>02</span>
-            <p>既存サイトのテキスト・画像・レイアウト修正</p>
-          </div>
-          <div class="service-item">
+            <h3>季節を感じる手作りスイーツ</h3>
+            <p>旬の食材を使い、コーヒーと相性のよいスイーツを手作りしています。</p>
+          </article>
+          <article class="feature-card">
             <span>03</span>
-            <p>スマホ対応の調整</p>
-          </div>
-          <div class="service-item">
-            <span>04</span>
-            <p>Googleスプレッドシートの簡単な自動化</p>
-          </div>
-          <div class="service-item">
-            <span>05</span>
-            <p>業務効率化ツールの作成</p>
-          </div>
+            <h3>ひとりでも過ごしやすい空間</h3>
+            <p>落ち着いた席配置で、読書や作業にも使いやすい雰囲気を整えています。</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact：送信機能なしのフォーム風デザインです -->
+    <!-- Gallery：あとから画像を差し替えやすい構造です -->
+    <section class="section section-warm" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="label">Gallery</p>
+          <h2>店内とメニューの雰囲気</h2>
+          <p>実際の写真に差し替える場合は、各 .gallery-photo の中を img タグに変更してください。</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <div class="gallery-photo shop-photo"></div>
+            <figcaption>落ち着いた店内</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-photo coffee-photo"></div>
+            <figcaption>香り高いコーヒー</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-photo sweets-photo"></div>
+            <figcaption>手作りスイーツ</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene：利用シーンを具体的に想像してもらうエリアです -->
+    <section class="section" id="scene">
+      <div class="container">
+        <div class="section-heading">
+          <p class="label">Scene</p>
+          <h2>こんな時間におすすめです</h2>
+        </div>
+        <div class="scene-list">
+          <article class="scene-item">
+            <h3>ひとり時間</h3>
+            <p>コーヒーを片手に、静かに気持ちを整える時間に。</p>
+          </article>
+          <article class="scene-item">
+            <h3>友人とのカフェ</h3>
+            <p>ゆっくり話せる席で、会話とスイーツを楽しめます。</p>
+          </article>
+          <article class="scene-item">
+            <h3>読書や作業</h3>
+            <p>落ち着いたBGMと明るすぎない照明で、集中したい日にも。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access：架空の店舗情報と地図風エリアです -->
+    <section class="section section-warm" id="access">
+      <div class="container access-layout">
+        <div>
+          <p class="label">Access</p>
+          <h2>店舗情報</h2>
+          <dl class="info-list">
+            <div>
+              <dt>住所</dt>
+              <dd>東京都〇〇区〇〇 1-2-3</dd>
+            </div>
+            <div>
+              <dt>営業時間</dt>
+              <dd>10:00〜19:00</dd>
+            </div>
+            <div>
+              <dt>定休日</dt>
+              <dd>火曜日</dd>
+            </div>
+            <div>
+              <dt>最寄駅</dt>
+              <dd>〇〇駅から徒歩5分</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="map-box">
+          <span>Map Image</span>
+          <p>東京都〇〇区〇〇 1-2-3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact：送信機能なしの問い合わせ風エリアです -->
     <section class="section contact-section" id="contact">
       <div class="container contact-layout">
         <div>
-          <p class="section-label">Contact</p>
-          <h2>ご相談・ご依頼はこちら</h2>
+          <p class="label">Contact</p>
+          <h2>落ち着いた空間で、こだわりの一杯を楽しみませんか？</h2>
           <p>
-            ご依頼内容がまだ固まっていない段階でも、お気軽にご相談ください。
-            内容を整理しながら、できることを丁寧にお伝えします。
+            Cafe Lumièreは架空の店舗です。このLPはポートフォリオ掲載用の制作サンプルとして作成しています。
           </p>
-          <div class="contact-links">
-            <a href="mailto:haru3office@gmail.com">haru3office@gmail.com</a>
-            <span>GitHub：準備中</span>
-            <span>SNS：準備中</span>
-          </div>
+          <a class="button primary-button" href="mailto:sample@example.com">お問い合わせ</a>
         </div>
         <form class="contact-form">
           <label>
@@ -219,19 +245,29 @@
             <input type="email" placeholder="example@example.com">
           </label>
           <label>
-            ご相談内容
-            <textarea rows="5" placeholder="Webページ制作について相談したいです。"></textarea>
+            お問い合わせ内容
+            <textarea rows="5" placeholder="予約やメニューについて相談したいです。"></textarea>
           </label>
-          <a class="button primary-button" href="mailto:haru3office@gmail.com">メールで相談する</a>
-          <p class="contact-note">フォームは見本です。ご相談はメールからお願いします。</p>
+          <button type="button">送信機能はありません</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Haru3. All rights reserved.</p>
+    <div class="container footer-inner">
+      <a class="footer-logo" href="#top">Cafe Lumière</a>
+      <nav class="footer-nav">
+        <a href="#concept">Concept</a>
+        <a href="#menu">Menu</a>
+        <a href="#access">Access</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="sns-links">
+        <a href="#">Instagram</a>
+        <a href="#">X</a>
+      </div>
+      <p>&copy; 2026 Cafe Lumière. Fictional portfolio sample.</p>
     </div>
   </footer>
 
