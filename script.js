@@ -1,4 +1,4 @@
-// スマホ表示でナビゲーションを開閉するための処理です
+// スマホ表示のときに、メニューを開閉するための処理です
 const menuButton = document.querySelector(".menu-button");
 const globalNav = document.querySelector(".global-nav");
 const navLinks = document.querySelectorAll(".global-nav a");
@@ -10,7 +10,7 @@ if (menuButton && globalNav) {
   });
 }
 
-// ナビゲーションのリンクを押したら、メニューを閉じます
+// メニュー内のリンクを押したら、自動でメニューを閉じます
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     if (menuButton && globalNav) {
