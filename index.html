@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haru3 Portfolio | Web制作・業務効率化</title>
+  <meta name="description" content="情報系大学生のWeb制作・Web修正・簡単な自動化案件向けポートフォリオサイトです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ヘッダー：サイト内の各セクションへ移動するナビゲーションです -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Haru3</a>
+      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="global-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- トップ：最初に見られる自己紹介エリアです -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Haru3</h1>
+        <p class="hero-title">情報系大学生 / Web制作・Web修正・業務効率化サポート</p>
+        <p class="hero-text">
+          HTML・CSS・JavaScriptを中心に、シンプルで見やすいWebページ制作や既存サイトの修正、
+          Googleスプレッドシートを使った簡単な作業効率化に対応します。
+          進捗共有と事前確認を大切にし、安心して相談できる対応を心がけています。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary-button" href="#contact">お問い合わせ</a>
+          <a class="button secondary-button" href="#works">制作実績を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About：人柄や仕事への姿勢を伝えるセクションです -->
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-label">About</p>
+          <h2>小さなご相談でも、内容を整理して丁寧に進めます。</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            情報系を専攻している大学生です。授業や自主学習を通して、プログラミング、
+            Web制作、業務効率化に関心を持ち、実際に手を動かしながら学んでいます。
+          </p>
+          <p>
+            まだ大きな実績は多くありませんが、依頼内容をきちんと整理し、作業前の確認、
+            進捗共有、不明点の相談をこまめに行います。発注者の方が安心して任せられるよう、
+            誠実でわかりやすいコミュニケーションを心がけています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills：できること・学習中のことを自然に整理しています -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Skills</p>
+          <h2>対応できること</h2>
+          <p>基礎を大切にしながら、小規模な制作・修正・自動化から対応できます。</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>HTML</h3>
+            <p>見出しや文章構造を意識し、読みやすいページを作成します。</p>
+          </article>
+          <article class="skill-card">
+            <h3>CSS</h3>
+            <p>余白、配色、レスポンシブ対応を意識したシンプルなデザイン制作ができます。</p>
+          </article>
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <p>メニュー開閉やフォーム表示など、Webページに小さな動きを加えられます。</p>
+          </article>
+          <article class="skill-card">
+            <h3>Python</h3>
+            <p>データ整理や簡単な処理の自動化を学習中です。小さな効率化から相談できます。</p>
+          </article>
+          <article class="skill-card">
+            <h3>Googleスプレッドシート自動化</h3>
+            <p>入力補助、集計、作業の整理など、簡単な自動化に対応します。</p>
+          </article>
+          <article class="skill-card">
+            <h3>Webサイト修正</h3>
+            <p>テキスト、画像、レイアウトの調整など、小さな修正も丁寧に対応します。</p>
+          </article>
+          <article class="skill-card">
+            <h3>レスポンシブ対応</h3>
+            <p>スマホ・タブレット・PCで見やすい表示になるよう調整します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works：実績を追加するときは article.work-card をコピーします -->
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Works</p>
+          <h2>制作実績・サンプル</h2>
+          <p>現在は学習成果とサンプル制作を中心に掲載しています。</p>
+        </div>
+        <div class="works-grid">
+          <article class="work-card">
+            <div class="work-image">Portfolio</div>
+            <div class="work-content">
+              <p class="work-category">Webサイト制作</p>
+              <h3>個人ポートフォリオサイト</h3>
+              <p>クラウドソーシングでの受注を想定し、自己紹介、対応範囲、連絡先を1ページに整理したサイトです。</p>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>スマホ対応</li>
+                <li>お問い合わせ導線</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image accent-green">LP Sample</div>
+            <div class="work-content">
+              <p class="work-category">架空サンプル</p>
+              <h3>学習サービス向けLP</h3>
+              <p>オンライン学習サービスを想定し、サービス内容と問い合わせ導線が伝わりやすい構成にしたLPサンプルです。</p>
+              <ul>
+                <li>ファーストビュー設計</li>
+                <li>料金・特徴セクション</li>
+                <li>CTAボタン配置</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image accent-orange">Automation</div>
+            <div class="work-content">
+              <p class="work-category">架空サンプル</p>
+              <h3>スプレッドシート集計自動化ツール</h3>
+              <p>入力された作業データを整理し、日別・担当者別に集計する仕組みを想定した業務効率化サンプルです。</p>
+              <ul>
+                <li>入力内容の整理</li>
+                <li>集計表の作成</li>
+                <li>作業時間の短縮</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service：クラウドソーシングで相談されやすい内容を並べています -->
+    <section class="section section-muted" id="service">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Service</p>
+          <h2>お手伝いできること</h2>
+          <p>クラウドソーシングでご相談いただきやすい、小規模な制作・修正を中心に対応します。</p>
+        </div>
+        <div class="service-list">
+          <div class="service-item">
+            <span>01</span>
+            <p>LP・簡単なWebページ制作</p>
+          </div>
+          <div class="service-item">
+            <span>02</span>
+            <p>既存サイトのテキスト・画像・レイアウト修正</p>
+          </div>
+          <div class="service-item">
+            <span>03</span>
+            <p>スマホ対応の調整</p>
+          </div>
+          <div class="service-item">
+            <span>04</span>
+            <p>Googleスプレッドシートの簡単な自動化</p>
+          </div>
+          <div class="service-item">
+            <span>05</span>
+            <p>業務効率化ツールの作成</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact：送信機能なしのフォーム風デザインです -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>ご相談・ご依頼はこちら</h2>
+          <p>
+            ご依頼内容がまだ固まっていない段階でも、お気軽にご相談ください。
+            内容を整理しながら、できることを丁寧にお伝えします。
+          </p>
+          <div class="contact-links">
+            <a href="mailto:haru3office@gmail.com">haru3office@gmail.com</a>
+            <span>GitHub：準備中</span>
+            <span>SNS：準備中</span>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label>
+            お名前
+            <input type="text" placeholder="山田 太郎">
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" placeholder="example@example.com">
+          </label>
+          <label>
+            ご相談内容
+            <textarea rows="5" placeholder="Webページ制作について相談したいです。"></textarea>
+          </label>
+          <a class="button primary-button" href="mailto:haru3office@gmail.com">メールで相談する</a>
+          <p class="contact-note">フォームは見本です。ご相談はメールからお願いします。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Haru3. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
